@@ -59,16 +59,16 @@
    			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
 	   		<div class="logo">
-		         <a href="index.html">FLASK</a>
+		         <a href="{{ url_for('home') }}" title="">FLASK</a>
 		      </div>		      
 
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
 						<li><a href="{{ url_for('home') }}" title="">Home</a></li>
-						<li><a href="index.html#about" title="">About</a></li>
-						<li><a href="index.html#resume" title="">Resume</a></li>
-						<li><a href="index.html#portfolio" title="">Portfolio</a></li>
-						<li><a href="index.html#services" title="">Services</a></li>					
+						<li><a href="{{ url_for('home', _anchor='about') }}" title="">About</a></li>
+						<li><a href="{{ url_for('home', _anchor='resume') }}" title="">Resume</a></li>
+						<li><a href="{{ url_for('home', _anchor='portfolio') }}" title="">Portfolio</a></li>
+						<li><a href="{{ url_for('home', _anchor='portfolio') }}" title="">Services</a></li>
 						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
 						<li><a href="{{ url_for('demo') }}" title="">Flask Demo</a></li>
 					</ul>
