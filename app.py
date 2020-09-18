@@ -55,9 +55,14 @@ def send_message(message):
     mail.send(msg)
 
 
-@app.route('/styles')
-def styles():
-    return render_template('styles.html')
+@app.route('/demo')
+def demo():
+    return render_template('demo.html')
+
+
+@app.route('/home')
+def home():
+    return redirect('/')
 
 
 if __name__ == "__main__":
