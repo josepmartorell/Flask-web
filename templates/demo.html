@@ -124,9 +124,10 @@
 
    		<div class="col-twelve">
 
-   			<h1>Flaskings Webs.</h1>
+   			<h1>Flaskings Author's Manifesto.</h1>
 
-   			<p class="lead">¡Mama, mama! ¡en el colegio me llaman peludo!.<br>-la mama contesta...<br>¡Paco! ¡el perro esta hablando!</p>
+   			<p class="lead">My father once showed me a little book when I was a kid,<br> he opened it and gently read something that I would never forget:<br>
+            "My homeland is the world, and my family is humanity".</p>
 
    		</div>
 
@@ -136,21 +137,13 @@
 
      		<div class="col-six tab-full">
 
-		      <h3>Paragraph and Image</h3>
+		      <h3>Leading projects</h3>
 
-		      <p><a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src="images/sample-image.jpg"></a>
-		  		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-		  		Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
-		  		posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
-		  		odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
-		  		condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
-		  		posuere nunc justo tempus leo. </p>
+		      <p><a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src='{{ url_for("static", filename="images/sample-image.jpg") }}'></a>
+		  		My philosophy is that when we create a platform for use by our company, we understand the usefulness and the functionality we expect from it in such a way that it is relatively easy to develop it. However, when we design a platform for our client this can be somewhat more difficult, in such circumstances it is necessary to debate and discuss said project in great detail, deducing from it an effective minimum structure that allows us to direct the project with maximum efficiency. </p>
 
 		  		<p>
-		  		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-		  		Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
-		  		posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
-		  		odio, ac blandit ante orci ut diam.	
+		  		About my skills I am specialized in web application development with Flask using Linux operating system for serialized production. Creation of corporate databases with PostgreSQL and MySQL. Cloud computing with AWS to host and launch projects using basic services like S3, EC2 Route 53 and others more to obtain scalability. Auxiliary skills with beautifulsoup, scrapy with Selenium and Splash javascript rendering services. Python automated spreadsheets for office tasks.
  			   </p>
 
             <p>A <a href="#">link</a>,
@@ -595,7 +588,7 @@
       	<div class="col-six tab-full">
 	      	<div class="copyright">
 		        	<span>© Copyright Flaskings 2020.</span>
-		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+		        	<span><a href="{{ url_for('home') }}">Powered by Flask</a></span>
 		         </div>		                  
 	      	</div>
 
