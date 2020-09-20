@@ -10,4 +10,4 @@ class ContactForm(FlaskForm):
     email = StringField('E-mail', validators=[DataRequired('Email cannot be empty'), Email('Enter a valid email')])
     subject = StringField('Subject', validators=[DataRequired('Subject cannot be empty')])
     message = TextAreaField('Message', validators=[DataRequired('Message cannot be empty')])
-    submit = SubmitField('Send')
+    submit = SubmitField('SUBMIT')
