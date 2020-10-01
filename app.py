@@ -56,8 +56,13 @@ def send_message(message):
 
 
 @app.route('/demo')
+@app.route('/contact2', methods=['POST', 'GET'])
 def demo():
-    return render_template('demo.html')
+    form = ContactForm()
+    if form.validate_on_submit():
+        send_message(request.form)
+        return redirect('/success')
+    return render_template('views/contacts/contact2.html', form=form)
 
 
 @app.route('/home')
