@@ -7,7 +7,7 @@ csrf = CSRFProtect()
 
 class ContactForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired('Name cannot be empty')])
-    email = StringField('E-mail', validators=[DataRequired('Email cannot be empty'), Email('Enter a valid email')])
-    subject = StringField('Subject', validators=[DataRequired('Subject cannot be empty')])
+    subject = StringField('E-mail', validators=[DataRequired('Email cannot be empty'), Email('Enter a valid email')])
+    email = StringField('Subject', validators=[DataRequired('Subject cannot be empty')])
     message = TextAreaField('Message', validators=[DataRequired('Message cannot be empty')])
     submit = SubmitField('SUBMIT')
