@@ -14,8 +14,8 @@ csrf.init_app(app)
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'email'
-app.config['MAIL_PASSWORD'] = "password"
+app.config['MAIL_USERNAME'] = 'jetro4100@gmail.com'
+app.config['MAIL_PASSWORD'] = "RXvanadium4100****_"
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -55,14 +55,14 @@ def send_message(message):
     mail.send(msg)
 
 
-@app.route('/demo')
-@app.route('/contact2', methods=['POST', 'GET'])
+@app.route('/flask')
+@app.route('/demo', methods=['POST', 'GET'])
 def demo():
     form = ContactForm()
     if form.validate_on_submit():
         send_message(request.form)
         return redirect('/success')
-    return render_template('views/contacts/contact2.html', form=form)
+    return render_template('views/contacts/demo.html', form=form)
 
 
 @app.route('/home')
