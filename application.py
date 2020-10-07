@@ -6,24 +6,24 @@ from .form_contact import ContactForm, csrf
 
 mail = Mail()
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 SECRET_KEY = os.urandom(32)
-app.config['SECRET_KEY'] = SECRET_KEY
-csrf.init_app(app)
+application.config['SECRET_KEY'] = SECRET_KEY
+csrf.init_app(application)
 
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'jetro4100@gmail.com'
-app.config['MAIL_PASSWORD'] = "RXvanadium4100****_"
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
+application.config['MAIL_SERVER'] = 'smtp.gmail.com'
+application.config['MAIL_PORT'] = 465
+application.config['MAIL_USERNAME'] = 'jetro4100@gmail.com'
+application.config['MAIL_PASSWORD'] = "RXvanadium4100****_"
+application.config['MAIL_USE_TLS'] = False
+application.config['MAIL_USE_SSL'] = True
 
-mail.init_app(app)
+mail.init_app(application)
 
 
-@app.route('/')
-@app.route('/contact', methods=['POST', 'GET'])
+@application.route('/')
+@application.route('/contact', methods=['POST', 'GET'])
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
@@ -39,7 +39,7 @@ def contact():
     return render_template('views/contacts/contact.html', form=form)
 
 
-@app.route('/success')
+@application.route('/success')
 def success():
     form = ContactForm()
     return render_template('views/contacts/contact.html', form=form)
@@ -55,8 +55,8 @@ def send_message(message):
     mail.send(msg)
 
 
-@app.route('/flask')
-@app.route('/demo', methods=['POST', 'GET'])
+@application.route('/flask')
+@application.route('/demo', methods=['POST', 'GET'])
 def demo():
     form = ContactForm()
     if form.validate_on_submit():
@@ -65,10 +65,10 @@ def demo():
     return render_template('views/contacts/demo.html', form=form)
 
 
-@app.route('/home')
+@application.route('/home')
 def home():
     return redirect('/')
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    application.run(debug=False)
