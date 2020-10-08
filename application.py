@@ -14,8 +14,8 @@ csrf.init_app(application)
 
 application.config['MAIL_SERVER'] = 'smtp.gmail.com'
 application.config['MAIL_PORT'] = 465
-application.config['MAIL_USERNAME'] = 'jetro4100@gmail.com'
-application.config['MAIL_PASSWORD'] = "RXvanadium4100****_"
+application.config['MAIL_USERNAME'] = 'email'
+application.config['MAIL_PASSWORD'] = "password"
 application.config['MAIL_USE_TLS'] = False
 application.config['MAIL_USE_SSL'] = True
 
