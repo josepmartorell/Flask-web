@@ -1,2 +1,2 @@
 # Flaskings
-Flaskings web application project
+Flaskerized frontend web design 
