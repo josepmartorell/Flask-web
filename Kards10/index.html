@@ -7,8 +7,8 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Flaskings</title>
-	<meta name="description" content="">
+	<title>Kards</title>
+	<meta name="description" content="">  
 	<meta name="author" content="">
 
    <!-- mobile specific metas
@@ -17,18 +17,18 @@
 
  	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href='{{ url_for("static", filename="css/base.css") }}'>
-   <link rel="stylesheet" href='{{ url_for("static", filename="css/main.css") }}'>
-   <link rel="stylesheet" href='{{ url_for("static", filename="css/vendor.css") }}'>
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
    <!-- script
-   ================================================== -->
-	<script src='{{ url_for("static", filename="js/modernizr.js") }}'></script>
-	<script src='{{ url_for("static", filename="js/pace.min.js") }}'></script>
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
    <!-- favicons
 	================================================== -->
-	<link rel="icon" type="image/png" href='{{ url_for("static", filename="images/favicon.png") }}'>
+	<link rel="icon" type="image/png" href="favicon.png">
 
 </head>
 
@@ -43,7 +43,7 @@
    			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
 	   		<div class="logo">
-		         <a href="{{ url_for('home') }}" title="">FLASK</a>
+		         <a href="index.html">KARDS</a>
 		      </div>		      
 
 		   	<nav id="main-nav-wrap">
@@ -54,7 +54,7 @@
 						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
 						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
 						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
-						<li><a href="{{ url_for('demo') }}" title="">Flask Demo</a></li>
+						<li><a href="styles.html" title="">Style Demo</a></li>				
 					</ul>
 				</nav>    		
    		</div> <!-- /top-bar --> 
@@ -64,7 +64,7 @@
 
 	<!-- intro section
    ================================================== -->
-   <section id="intro">
+   <section id="intro">   
 
    	<div class="intro-overlay"></div>	
 
@@ -74,11 +74,11 @@
    			<div class="col-twelve">
 
 	   			<h5>Hello, World.</h5>
-	   			<h1>I'm Josep Martorell.</h1>
+	   			<h1>I'm Juan Dela Cruz.</h1>
 
 	   			<p class="intro-position">
-	   				<span>Python Flask Back-end</span>
-	   				<span>Web Scraping Programmer</span>
+	   				<span>Front-end Developer</span>
+	   				<span>UI/UX Designer</span> 
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -88,12 +88,12 @@
    		</div>   		 		
    	</div> <!-- /intro-content --> 
 
-   	<ul class="intro-social">
-		 <li><a href="http://html5doctor.com/"><i class="fa fa-html5"></i></a></li>
-         <li><a href="https://www.w3schools.com/css/default.asp"><i class="fa fa-css3"></i></a></li>
-		 <li><a href="https://ubuntu.com/"><i class="fa fa-linux"></i></a></li>
-		 <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
-		 <li><a href="https://flask.palletsprojects.com/en/1.1.x/"><i class="fa fa-flask"></i></a></li>
+   	<ul class="intro-social">        
+         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="#"><i class="fa fa-behance"></i></a></li>
+         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
       </ul> <!-- /intro-social -->      	
 
    </section> <!-- /intro -->
@@ -111,9 +111,9 @@
 
    			<div class="intro-info">
 
-   				<img src='{{ url_for("static", filename="images/profile-pic.jpg") }}' alt="Profile Picture">
+   				<img src="images/profile-pic.jpg" alt="Profile Picture">
 
-   				<p class="lead">I am a tireless technology worker, very proactive and always repairing details to improve them. I am focused on cross-platform web development applications creating professional blogs, business websites and digital platforms for online stores. I also practice data extraction and some sympathy for AI :)</p>
+   				<p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
    			</div>   			
 
    		</div>   		
@@ -124,24 +124,28 @@
    		<div class="col-six tab-full">
 
    			<h3>Profile</h3>
-   			<p>Specialized in web application development with Flask using Linux operating system for serialized production. Cloud computing with AWS to host and launch projects.</p>
+   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
 
    			<ul class="info-list">
    				<li>
    					<strong>Fullname:</strong>
-   					<span>Josep Martorell</span>
+   					<span>Juan Dela Cruz</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>September 28, 1987</span>
    				</li>
    				<li>
    					<strong>Job:</strong>
-   					<span>Backend Web Developer</span>
+   					<span>Freelancer, Frontend Developer</span>
    				</li>
    				<li>
    					<strong>Website:</strong>
-   					<span>www.flaskings.com</span>
+   					<span>www.kardswebsite.com</span>
    				</li>
    				<li>
    					<strong>Email:</strong>
-   					<span>martorelljosep@gmail.com</span>
+   					<span>me@kardswebsite.com</span>
    				</li>
 
    			</ul> <!-- /info-list -->
@@ -151,28 +155,29 @@
    		<div class="col-six tab-full">
 
    			<h3>Skills</h3>
-   			<p>Flask technology for web development. Databases with PostgreSQL and MySQL. </br>Customized web scraping scripts with Selenium. Automated spreadsheets with Python.</p>
+   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
 
 				<ul class="skill-bars">
 				   <li>
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>Python</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent75"><span>75%</span></div>
+				   	<div class="progress percent90"><span>90%</span></div>
 				   	<strong>HTML5</strong>
 				   </li>
 				   <li>
-				   	<div class="progress percent55"><span>55%</span></div>
+				   	<div class="progress percent85"><span>85%</span></div>
 				   	<strong>CSS3</strong>
 				   </li>
 				   <li>
-				   	<div class="progress percent80"><span>80%</span></div>
-				   	<strong>Javascript</strong>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>JQuery</strong>
 				   </li>
 				   <li>
-				   	<div class="progress percent45"><span>45%</span></div>
-				   	<strong>Java</strong>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>PHP</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Wordpress</strong>
 				   </li>
       
 				</ul> <!-- /skill-bars -->		
@@ -184,7 +189,7 @@
    	<div class="row button-section">
    		<div class="col-twelve">
    			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="#services" title="Download CV" class="button button-primary smoothscroll">Services</a>
+   			<a href="#" title="Download CV" class="button button-primary">Download CV</a>
    		</div>   		
    	</div>
 
@@ -201,7 +206,7 @@
    			<h5>Resume</h5>
    			<h1>More of my credentials.</h1>
 
-   			<p class="lead">My father was an accomplished engineer working in a factory laboratory in the last century, when he lived, and maybe that's why there is a love for technology in me.</p>
+   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -225,19 +230,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Software Developer</h3>
-	   					<p>September 2019 - Sept. 2020</p>
+	   					<h3>UI Designer</h3>
+	   					<p>July 2015 - Present</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-						<h4><a href="https://businessandtravel.agency/">Business & Travel</a> - <a href="https://s3.eu-west-1.amazonaws.com/jmartorell.tech/index.html">Internship</a></h4>
-						The function as a programmer consist of:
-						<p>
-							-Using advanced web scraping techniques to extract data interacting &nbsp;&nbsp;with web pages and doing different things programmatically.</br>
-							-Returning collected data into a different formatted spreadsheets, &nbsp;&nbsp;reporting results and sending automated emails to the stakeholders.
-							-Automation of repetitive tasks that translates into time and effort &nbsp;&nbsp;savings and that translates into better performance of office tasks.</br>
-							-Development of back-end project with &nbsp;&nbsp;Flask and PostgreSQL for &nbsp;&nbsp;Business & Travel website.
-						</p>
+	   					<h4>Awesome Studio</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -249,13 +248,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Auxiliary Technician</h3>
-	   					<p>January 2018 - July 2019</p>
+	   					<h3>Front-end Developer</h3>
+	   					<p>July 2014 - June 2015</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Reus Council Department of Culture - Contract </h4>
-	   					<p>Cultural manager in charge of the management of a cultural entity based in Casa Rull, such as theaters, orchestras, concert halls, art galleries or art centers. The job is to support the administrative staff in their tasks, management of job boards and support to the organizers of the headquarters.</p>
+	   					<h4>Super Cool Agency</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -267,13 +266,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Energy Advisor</h3>
-	   					<p>March 2017 - June 2017</p>
+	   					<h3>Web Designer</h3>
+	   					<p>May 2013 - June 2014</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Equality Exteam S.L. - Contract</h4>
-	   					<p>Provide comprehensive assistance to companies in the management of all energy-related matters, and to all energy supply processes, helping the company to make decisions in the energy markets, through the development of energy supply strategies and risk management.</p>
+	   					<h4>Great Designs Studio</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -303,31 +302,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Batchelor Degree</h3>
-	   					<p>September 2018 - Present</p>
+	   					<h3>Master Degree</h3>
+	   					<p>July 2015 - Present</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Open Institute of Catalonia, BCN</h4>
-						<p><strong>Senior technician in cross-platform application development</strong>. </br>As backend normally makes up 80 percent of any project this has become the best line for me. From here I guide my profile to complete myself as a Full Stack Developer..</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Official Certificate</h3>
-	   					<p>June 2017 - December 2017</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>AULA REUS - Government Approved Study Center</h4>
-						<p><strong>Certificate of professionalism in Computer Systems Programming</strong>. </br>With a self-taught base inherited with Java2 that began in 1994, I took the opportunity to obtain the Certificate in Systems Programming Approved by the Spain Government's Department of Culture.</p>
+	   					<h4>University of Life</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -340,12 +321,30 @@
 
 	   				<div class="timeline-header">
 	   					<h3>Bachelor Degree</h3>
-	   					<p>September 2010 - June 2015</p>
+	   					<p>July 2014 - June 2015</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>UNED</h4>
-						<p><strong>As a social engineer, I hold a Bologna degree in Psychology</strong>. </br>In my personal training I think that it has powerfully stimulated my ability to learn in addition to enriching my cultural level and way of seeing the world, but also my interest in Artificial Intelligence.</p>
+	   					<h4>State Design University</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>May 2013 - June 2014</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Design College</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -369,8 +368,7 @@
    			<h5>Portfolio</h5>
    			<h1>Check Out Some of My Works.</h1>
 
-   			<div class="lead">This is a small collection of my Flask projects using Styleshout templates. </br>
-I myself 	have done the work of copywriter, logos and photos implementing finally the backend engineering. </div>
+   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -384,13 +382,13 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 	         	<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src='{{ url_for("static", filename="images/portfolio/jmartorell.jpg") }}' alt="JMartorell">
+	               	<img src="images/portfolio/liberty.jpg" alt="Liberty">
 	                  <a href="#modal-01" class="overlay">	                  	           
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Business&Travel Automation Desk</h3>
+		     					       <h3 class="folio-title">Liberty</h3>	     					    
 		     					    	 <span class="folio-types">
-		     					       	  Automation Selenium + automated spreadsheets
+		     					       	  Graphic Design
 		     					       </span>
 		     					   </div>	                      	
 	                     </div>                    
@@ -400,13 +398,13 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 	        		<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src='{{ url_for("static", filename="images/portfolio/spiderweb.jpg") }}' alt="Spiderweb">
+	               	<img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
 	               	<a href="#modal-02" class="overlay">              		                  
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Troubleshoot webScraping Miniblog</h3>
+	                     		<h3 class="folio-title">Shutterbug</h3>	     					    
 		     					    	<span class="folio-types">
-		     					       	  Python Flask Backend
+		     					       	  Web Design
 		     					      </span>		     		
 		     					   </div> 	                      	
 	                     </div>                    
@@ -416,13 +414,13 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 	            <div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src='{{ url_for("static", filename="images/portfolio/awsrekognition.jpg") }}' alt="Clouds">
+	               	<img src="images/portfolio/clouds.jpg"alt="Clouds">
 	                  <a href="#modal-03" class="overlay">             		                  
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Next Job</h3>
+	                     		<h3 class="folio-title">Clouds</h3>	     					    
 		     					    	<span class="folio-types">
-		     					       	  Automation Selenium + visual recognition
+		     					       	  Web Design
 		     					      </span>		     		
 		     					   </div> 	                      	
 	                     </div>                    
@@ -432,37 +430,69 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 	            <div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src='{{ url_for("static", filename="images/portfolio/flaskings.jpg") }}' alt="Flaskings">
+	               	<img src="images/portfolio/beetle.jpg" alt="Beetle">
 	                  <a href="#modal-04" class="overlay">                  	                 
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">My Personal Website</h3>
+	                     		<h3 class="folio-title">Beetle</h3>	     					    
 		     					    	<span class="folio-types">
-		     					       	  Python Flask Backend
+		     					       	  Branding
 		     					      </span>		     		
 		     					   </div>  	                      	
 	                     </div>                    
 	                  </a>
 	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Lighthouse</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
 	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/salad.jpg" alt="Salad">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Salad</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Branding
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
 
 	            <!-- modal popups - begin
 	            ============================================================= -->
 	            <div id="modal-01" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src='{{ url_for("static", filename="images/portfolio/modals/jmartorell.jpg") }}' alt="" />
+				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Business&Travel Automation Desk</h4>
-					      <p>In short, the practices are based on the analysis of office tasks in the agency for translation into valid roadmaps to develop efficient automation software. These applications interact with the desktop, applications such as the Microsoft Office Suite, or applications located on servers, usually search engines for hotel reservations at business service providers.</p>
+					      <h4>Liberty</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Automation Selenium + spreadsheets</div>
+					      <div class="categories">Web Development</div>			               
 					   </div>
 
 			         <div class="link-box">
-			            <a href="https://s3.eu-west-1.amazonaws.com/jmartorell.tech/index.html">Details</a>
+			            <a href="http://www.behance.net">Details</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>		      
 
@@ -471,18 +501,18 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 				   <div id="modal-02" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src='{{ url_for("static", filename="images/portfolio/modals/spiderweb.jpg") }}' alt="" />
+				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Troubleshoot webScraping Miniblog </h4>
-					      <p>Banner for the next project based on data extraction from web content using python technologies such as scrapy, beautifulsoup or requests.</p>
+					      <h4>Shutterbug</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Python Flask Backend</div>
+					      <div class="categories">Web Design</div>			               
 					   </div>
 
 			         <div class="link-box">
-			            <a href="https://github.com/josepmartorell/Troubleshoot-webScraping-Miniblog">Details</a>
+			            <a href="http://www.behance.net">Details</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>		      
 
@@ -491,18 +521,18 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 				   <div id="modal-03" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src='{{ url_for("static", filename="images/portfolio/modals/awsrekognition.jpg") }}' alt="" />
+				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Next Job</h4>
-					      <p>The current project builds on work on corruption in the political arena. It is a project to scale previous projects into larger data extraction and filtering using webScraping and visual recognition techniques.</p>
+					      <h4>Clouds</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Automation Selenium + visual recognition</div>
+					      <div class="categories">Web Design</div>			               
 					   </div>
 
 			         <div class="link-box">
-			            <a href="https://aws.amazon.com/es/console/">Details</a>
+			            <a href="http://www.behance.net">Details</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>		      
 
@@ -511,22 +541,63 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 				   <div id="modal-04" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src='{{ url_for("static", filename="images/portfolio/modals/flaskings.jpg") }}' alt="" />
+				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>My Personal Website</h4>
-					      <p>This is a small personal CV to search for a job as a developer. It is a Flaskerized Landing Page with a second page titled "Flask Demo" that includes videos and suggestions for projects.</p>
+					      <h4>Beetle</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-					      <div class="categories">Python Flask Backend</div>
+					      <div class="categories">Branding</div>			               
 					   </div>
 
 			         <div class="link-box">
-			            <a href="{{ url_for('home') }}">Details</a>
+			            <a href="http://www.behance.net">Details</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>		      
 
 				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Lighthouse</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Salad</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
 
 				   <!-- modal popups - end
 	            ============================================================= -->
@@ -548,16 +619,16 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
    		<div class="col-twelve section-ads">  
 
-	     		<h2 class="h01"><a href="https://www.styleshout.com/">Flaskings Recommends Styleshout.</a></h2>
+	     		<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
 
 		      <p class="lead">
-		      Looking for an awesome and smart design? Try <a href="https://www.styleshout.com/"><span>Styleshout</span></a>.
-				Get <span>Free </span>templates, beautifully handcrafted HTML website <span>styleshout</span>.
+		      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+				Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
 				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->	
 				</p>
 
 				<div class="action">
-			      <a class="button button-primary large" href="https://www.styleshout.com/">Sign Up Now</a>
+			      <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
 		      </div>		     	
 
    		</div>
@@ -579,7 +650,7 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
    			<h5>Services</h5>
    			<h1>What Can I Do For You?</h1>
 
-   			<p class="lead">This is a small catalog of the services that I can provide grouped into three blocks. If you have a doubt or need any clarification about it, do not hesitate to contact me!</p>
+   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
    		</div>   		
    	</div> <!-- /section-intro -->
@@ -590,14 +661,13 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 	      	<div class="service">	
 
-	      		<span class="icon"><i class="icon-earth"></i></span>
+	      		<span class="icon"><i class="icon-earth"></i></span>            
 
 	            <div class="service-content">	
 
-	            	 <h3>Selenium Spiders</h3>
+	            	 <h3>Webdesign</h3>
 
-		            <p class="desc">With selenium's custom scripts, many tasks can be automated: Programmatically log in to websites, entering all data in search engines,
-						pressing button to start search, and more. Using web scraping in combination with they allow a follow-up of all the information, filtering it to create documents and reports automatically.
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
 	         		</p>
 	         		
 	         	</div> 	         	 
@@ -606,14 +676,13 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 				<div class="service">	
 
-					<span class="icon"><i class="icon-wrench"></i></span>
+					<span class="icon"><i class="icon-window"></i></span>                          
 
 	            <div class="service-content">	
 
-	            	<h3>Backend Web Development</h3>
+	            	<h3>Web Development</h3>  
 
-		            <p class="desc">Web development normally begins with well-selected frontend designs and prior graphic design with copywriting work to adapt the template.
-						From here, the backend engineering is implemented according to the design so that everything works and complies with a list of functionalities and quality standards.
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
 	         		</p>
 
 	            </div>	                          
@@ -622,15 +691,14 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 			   <div class="service">
 
-			   	<span class="icon"><i class="icon-pencil"></i></span>
+			   	<span class="icon"><i class="icon-paint-brush"></i></span>		            
 
 	            <div class="service-content">
 
-	            	<h3>Automated Spreadsheets</h3>
+	            	<h3>Branding</h3>
 
-		            <p class="desc">Python openpyxl and xmlxwriter scripts are extremely useful for automating spreadsheets and other applications from Microsoft's office suite or LibreOffice.
-						Automation of repetitive tasks that translates into a saving of time and effort and resulting in a better performance of the company's business office processes.
-					</p>
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
 
 	            </div> 	            	               
 
@@ -638,14 +706,13 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 				<div class="service">
 
-					<span class="icon"><i class="icon-star"></i></span>
+					<span class="icon"><i class="icon-toggles"></i></span>	              
 
 	            <div class="service-content">
 
-	            	<h3>Blog VIPs</h3>
+	            	<h3>UI/UX Design</h3>
 
-		            <p class="desc">Web designs adapted for the promotion of famous people or simply people who profess an image to the public often use social blog engineering to interact with users.
-                       Sometimes they require a lot more functionality, especially if you offer a small service like a guitar course or a collection of flirting video tutorials.
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
 	         		</p> 
 	         		
 	            </div>                
@@ -654,16 +721,14 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 			   <div class="service">
 
-			   	<span class="icon"><i class="icon-bar-chart"></i></span>
+			   	<span class="icon"><i class="icon-image"></i></span>	            
 
 	            <div class="service-content">
 
-	            	<h3>Business Website</h3>
+	            	<h3>Graphics Design</h3>
 
-		            <p class="desc"> The implementation of a business website implies a structure with differentiated sections, attractive content,
-						impressive texts, logos, images and multimedia files. It may also need the multi-language function or integrate with an email marketing
-						platform among other things such as a blog to interact with customers.
-					</p>
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
 
 	            </div>	               
 
@@ -671,13 +736,13 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
 			   <div class="service">
 
-			   	<span class="icon"><i class="icon-shopping-cart"></i></span>
+			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
 
 	            <div class="service-content">
 
-	            	 <h3>Online Store</h3>
+	            	 <h3>Consultancy</h3>
 
-		            <p class="desc">Web applications for online commerce are the flagship product in many ways. They should be well designed with a custom product catalog, all possible payment methods, and even a blog to drive some traffic to the store. Other features are: shopping card, order management, client registration and client authentication.
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
 	        			</p> 
 	        			
 	            </div>	               
@@ -814,7 +879,7 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
    			<h5>Contact</h5>
    			<h1>I'd Love To Hear From You.</h1>
 
-   			<p class="lead">We appreciate your interest in visiting my website. If you want to contact me, please, fill out the contact form and I will respond quickly. <br>Thank you and see you soon! :)</p>
+   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
    		</div> 
    	</div> <!-- /section-intro -->
@@ -824,8 +889,35 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
    		<div class="col-twelve">
 
             <!-- form -->
-			{% block content %}{% endblock %}
- 			<!-- Form End -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>                       
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>                      
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
 
             <!-- contact-warning -->
             <div id="message-warning">            	
@@ -850,9 +942,9 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
    			<h5>Where to find me</h5>
 
    			<p>
-			Batan, 3 BAJO, 43204 Reus<br>
-			TARRAGONA<br>
-            SPAIN
+            1600 Amphitheatre Parkway<br>
+            Mountain View, CA<br>
+            94043 US
             </p>
 
    		</div>
@@ -865,7 +957,8 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
    			<h5>Email Me At</h5>
 
-   			<p>martorelljosep@gmail.com<br>
+   			<p>someone@kardswebsite.com<br>
+			   	info@kardswebsite.com			     
 			   </p>
 
    		</div>
@@ -878,9 +971,9 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
    			<h5>Call Me At</h5>
 
-   			<p>Phone: (+34) 977 756 846<br>
-			   	Mobile: (+34) 646 671 379<br>
-			     	Fax: who still uses fax?
+   			<p>Phone: (+63) 555 1212<br>
+			   	Mobile: (+63) 555 0100<br>
+			     	Fax: (+63) 555 0101
 			   </p>
 
    		</div>
@@ -898,20 +991,20 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
      		<div class="col-six tab-full pull-right social">
 
-     			<ul class="footer-social">
-				  <li><a href="http://html5doctor.com/"><i class="fa fa-html5"></i></a></li>
-			      <li><a href="https://www.w3schools.com/css/default.asp"><i class="fa fa-css3"></i></a></li>
-			      <li><a href="https://ubuntu.com/"><i class="fa fa-linux"></i></a></li>
-			      <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
-				  <li><a href="https://flask.palletsprojects.com/en/1.1.x/"><i class="fa fa-flask"></i></a></li>
+     			<ul class="footer-social">        
+			      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+			      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+			      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
 			   </ul> 
 	      		
 	      </div>
 
       	<div class="col-six tab-full">
 	      	<div class="copyright">
-		        	<span>© Copyright Flaskings 2020.</span>
-		        	<span><a href="{{ url_for('home') }}">Powered by Flask</a></span>
+		        	<span>© Copyright Kards 2016.</span> 
+		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
 		         </div>		                  
 	      	</div>
 
@@ -928,9 +1021,9 @@ I myself 	have done the work of copywriter, logos and photos implementing finall
 
    <!-- Java Script
    ================================================== --> 
-   <script src='{{ url_for("static", filename="js/jquery-2.1.3.min.js") }}'></script>
-   <script src='{{ url_for("static", filename="js/plugins.js") }}'></script>
-   <script src='{{ url_for("static", filename="js/main.js") }}'></script>
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
 
 </body>
 
